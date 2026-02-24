@@ -13,9 +13,12 @@
 <body>
     <header>
         <section id="hed">
-            <nav class="navigation">
+            <nav class="navigation" >
                 <h2>tumaini school</h2>
-                <ul>
+                <div id="menu"><i class="fa-solid fa-bars"></i></div>
+               
+                <ul id="nav"> 
+                     <div id="close" class="close"><i class="fa-solid fa-circle-xmark"></i></div>
                     <li><a href="index.html"> home </a></li>
                     <li><a href="about.html"> about </a></li>
                     <li><a href="login.html"> log in </a></li>
@@ -31,7 +34,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main> 
         <section id="welcome" class="reveal">
             <h2 class="title">Welcome <span>Note</span> </h2>
             <div class="welcomecontent">
@@ -53,7 +56,7 @@
             </div>
             </div>
             
-        </section>
+        </section> 
         <section id="add">
             <h1>SELECT A SCHOOL OF YOUR CHOICE  </h1>
             <a href="#"><button class="ctn">Admission</button></a>
@@ -125,10 +128,30 @@
     <div class="lux-bottom">
         © 2026 tumaini school — Crafted with Excellence
     </div>
-        </footer>
+        </footer>  
     </main>
 </body>
 <script>
+    // menu open js 
+
+    const menu = document.getElementById("menu");
+    const close = document.getElementById("close");
+    const nav = document.getElementById("nav");
+    
+    if(menu){
+        menu.addEventListener("click",()=>{
+        nav.classList.add('openmenu');
+        
+        })
+        
+    }
+      if(close){
+        close.addEventListener("click",()=>{
+        nav.classList.remove('openmenu');
+       
+        })
+        
+    }
     // hed animation
   const reveals = document.querySelectorAll(".reveal");
     function revealOnScroll() {

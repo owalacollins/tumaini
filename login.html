@@ -13,10 +13,11 @@
 
 }
 :root{
-    --color1:hsl(6, 20%, 30%);
+     --color1:hsl(6, 20%, 30%);
     --color2:#e1e5f2;
     --color3:hsl(290, 42%, 29%);
-    --fontp:clamp(10px,3vw,20px );
+    --fontp: clamp(10px,4vw,25px ) ;
+    --fontsubtopic: clamp(15px,5vw,25px );
 }
 /*
 
@@ -109,6 +110,43 @@
     border: none;
     letter-spacing: 3px;
  }
+ @media  (max-width:900px){
+ form{
+    
+    background-color: white;
+    width: 90%;
+    padding: 5px;
+   border-radius: 10px;
+ }
+ form h4{
+
+    font-size: var(--fontsubtopic);
+}
+ form label{
+    display: block;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 10px 0PX; 
+ }
+ img{
+    width: 100px;
+    display: block;
+    margin: 5px auto;
+    
+ }
+ form input, select{
+    padding: 5px;
+ }
+ input[type='submit']{
+  
+    padding: 15px;
+ }
+
+}
     </style>
 </head>
 <body>

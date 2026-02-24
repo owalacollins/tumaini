@@ -12,10 +12,13 @@
 </head>
 <body>
     <header>
-        <section id="hed">
-            <nav class="navigation">
+         <section id="hed">
+            <nav class="navigation" >
                 <h2>tumaini school</h2>
-                <ul>
+                <div id="menu"><i class="fa-solid fa-bars"></i></div>
+               
+                <ul id="nav"> 
+                     <div id="close" class="close"><i class="fa-solid fa-circle-xmark"></i></div>
                     <li><a href="index.html"> home </a></li>
                     <li><a href="about.html"> about </a></li>
                     <li><a href="login.html"> log in </a></li>
@@ -24,10 +27,10 @@
                 </ul>
             </nav>
             <div class="content">
-                <h2>welcome to </h2>
+                <h2>welcome to ;</h2>
                 <h1>TUMAINI  <span> SCHOOL</span> </h1>
                 <p>Developing innovators & leaders who will shape the future</p>
-                <a href="#"><button class="btn">Admission</button></a>
+                <a href="#"><button class="btn"> Admission <i class="fa-solid fa-school"></i></button></a>
             </div>
         </section>
     </header>
@@ -117,4 +120,65 @@
         </footer>
     </main>
 </body>
+<script>
+    // menu open js 
+
+    const menu = document.getElementById("menu");
+    const close = document.getElementById("close");
+    const nav = document.getElementById("nav");
+    
+    if(menu){
+        menu.addEventListener("click",()=>{
+        nav.classList.add('openmenu');
+        
+        })
+        
+    }
+      if(close){
+        close.addEventListener("click",()=>{
+        nav.classList.remove('openmenu');
+       
+        })
+        
+    }
+    // hed animation
+  const reveals = document.querySelectorAll(".reveal");
+    function revealOnScroll() {
+    for(let i =0;i < reveals.length;i++){
+        let windowHeight=window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealpoint=150;
+
+        if(revealTop< windowHeight - revealpoint){
+            reveals[i].classList.add("actives") ;
+        } else{
+            reveals[i].classList.remove("actives") ;
+        }  
+        
+    }
+    }
+    window.addEventListener("scroll", revealOnScroll);
+
+// Run once on load (optional)
+revealOnScroll();
+
+const joins = document.querySelectorAll('.joins');
+
+function joinonscroll(){
+    for(i=0; i < joins.length; i++){
+        let windowheight = window.innerHeight;
+        let jointop = joins[i].getBoundingClientRect().top ;
+        let revealpoint= 150 //
+
+         if(jointop < windowheight - revealpoint){
+            joins[i].classList.add('join');
+         } else{
+           joins[i].classList.remove('join');
+         }
+    }
+}
+window.addEventListener("scroll",joinonscroll);
+
+joinonscroll(); 
+</script>
 </html>
