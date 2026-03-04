@@ -111,7 +111,7 @@ nav ul li a {
 .content{
   padding: 7vw;
   color: var(--color3);
- border: 1px solid red;
+
   height: 93vh;
   display: flex;
   justify-content: center;
@@ -244,16 +244,15 @@ video{
 }
 
 .videocontent h4{
- font-size: 35px;
  color: var(--color3);
  margin-bottom: 20px;
- font-size: var(--fontsubtopic);
+ font-size: clamp(5px,4vw,36px ) ;
 }
 .videocontent p{
- font-size:var(--fontp);
+ font-size: clamp(10px,4vw,18px ) ;
  font-weight: 300;
- line-height: 30px;
- color: var(--color1);
+ line-height: 25px;
+ color: black;
 }
 /* video  styling ends here -------------------------------------------------------------------------------------------------- */
 
@@ -602,6 +601,84 @@ input[type="submit"]{
 }
 
 /* madia page styling ends here -------------------------------------------------------------------------------------------------- */
+/* teacher page and staffs  styling starts here -------------------------------------------------------------------------------------------------- */
+#staffs{
+  padding: 50px;
+}
+.staffscontent {
+  width: 50%;
+ 
+}
+.staffscontent h2{
+ text-align: left;
+  display: block;
+  font-size: clamp(10px,9vw,36px ) ;
+}
+.staffscontent p{
+ font-size: clamp(10px,4vw,18px );
+ margin: 20px 0;
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+#teachers{
+  
+  padding: 10px;
+}
+.teachers{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+.teacher{
+ box-shadow: 0 4px 2px 5px rgba(0, 0, 0, 0.166);
+  width: 26%;
+ padding: 10px;
+ height: 55vh;
+ background-color: #eae5e5;
+}
+.teacher img{
+  width: 100%;
+  aspect-ratio: 19/14;
+  margin-bottom: 20px;
+}
+.teacher h3{
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 6px 0;
+}
+.teacher h4{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: green;
+  text-transform: capitalize;
+  font-style: normal;
+  margin: 10px 0;
+}
+.teacher p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* teacher page and staffs  styling ends here -------------------------------------------------------------------------------------------------- */
 /* footer  stylings starts here -------------------------------------------------------------------------------------------------------*/
 
 .lux-footer {
@@ -738,16 +815,19 @@ transition: ease-in-out 2s;
 }
 /* video styling starts here  -------------------------------------------------------------------------------------------------- */
 .videocontainer{
-  
+  border: 1px solid red;
+  padding: 5px;
   flex-direction: column  ;
   width: 100%;
 
 }
 .video{
-  width: 98%;
+  width: 100%;
+
 }
 video{
  width: 100%; 
+ 
 }
 .videocontent {
   width: 100%;
@@ -755,15 +835,16 @@ video{
     
 }
 .videocontent h4{
- font-size: 35px;
  color: var(--color3);
  margin-bottom: 20px;
+ font-size: clamp(10px,9vw,36px ) ;
 }
 .videocontent p{
- font-size:var(--fontp);
+ font-size: clamp(10px,4vw,18px ) ;
  font-weight: 300;
- line-height: 25px;
- color: var(--color1);
+ line-height: 20px;
+ color: black;
+ text-align: justify;
 }
 /* video  styling ends here -------------------------------------------------------------------------------------------------- */
 /* add styling starts here -------------------------------------------------------------------------------------------------- */
