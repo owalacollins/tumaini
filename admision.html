@@ -132,4 +132,65 @@
         </footer>
     </main>
 </body>
+<script>
+    // menu open js 
+
+    const menu = document.getElementById("menu");
+    const close = document.getElementById("close");
+    const nav = document.getElementById("nav");
+    
+    if(menu){
+        menu.addEventListener("click",()=>{
+        nav.classList.add('openmenu');
+        
+        })
+        
+    }
+      if(close){
+        close.addEventListener("click",()=>{
+        nav.classList.remove('openmenu');
+       
+        })
+        
+    }
+    // hed animation
+  const reveals = document.querySelectorAll(".reveal");
+    function revealOnScroll() {
+    for(let i =0;i < reveals.length;i++){
+        let windowHeight=window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealpoint=150;
+
+        if(revealTop< windowHeight - revealpoint){
+            reveals[i].classList.add("actives") ;
+        } else{
+            reveals[i].classList.remove("actives") ;
+        }  
+        
+    }
+    }
+    window.addEventListener("scroll", revealOnScroll);
+
+// Run once on load (optional)
+revealOnScroll();
+
+const joins = document.querySelectorAll('.joins');
+
+function joinonscroll(){
+    for(i=0; i < joins.length; i++){
+        let windowheight = window.innerHeight;
+        let jointop = joins[i].getBoundingClientRect().top ;
+        let revealpoint= 150 //
+
+         if(jointop < windowheight - revealpoint){
+            joins[i].classList.add('join');
+         } else{
+           joins[i].classList.remove('join');
+         }
+    }
+}
+window.addEventListener("scroll",joinonscroll);
+
+joinonscroll(); 
+</script>
 </html>
