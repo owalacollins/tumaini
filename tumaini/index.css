@@ -63,7 +63,7 @@
 
 */
 section{
-    
+    border: 1px solid green;
     max-width: 1900px;
     min-height: 20vh;
     margin: 0 auto;
@@ -843,10 +843,11 @@ video{
 }
 .videocontent p{
  font-size: clamp(10px,4vw,18px ) ;
- font-weight: 300;
- line-height: 20px;
+ font-weight: 400;
+ line-height: 22px;
  color: black;
  text-align: justify;
+ padding: 10px;
 }
 /* video  styling ends here -------------------------------------------------------------------------------------------------- */
 /* add styling starts here -------------------------------------------------------------------------------------------------- */
@@ -860,6 +861,9 @@ video{
   padding: 20px;
   color: var(--color2);
 }
+#add h1{
+  text-align: center;
+}
 /* add styling ends here -------------------------------------------------------------------------------------------------- */
 
 /* schools styling starts here -------------------------------------------------------------------------------------------------- */
@@ -869,6 +873,7 @@ video{
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  padding: 10px;
 }
 .school{
   width: 98%;
