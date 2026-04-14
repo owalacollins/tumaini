@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+<script src="https://kit.fontawesome.com/4d903c9eb4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <section id="hed">
+            <nav class="navigation" >
+                <h2>tumaini school</h2>
+                <div id="menu"><i class="fa-solid fa-bars"></i></div>
+               
+                <ul id="nav"> 
+                     <div id="close" class="close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <li><a href="index.html"> home </a></li>
+                    <li><a href="about.html"> about </a></li>
+                    <li><a href="login.html"> log in </a></li>
+                    <li><a href="media.html"> media </a></li>
+                    <li><a href="teachers.html"> staffs </a></li>
+                    <li><a href="admision.html"> admission </a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h2>welcome to ;</h2>
+                <h1>TUMAINI  <span> SCHOOL</span> </h1>
+                <p>Developing innovators & leaders who will shape the future</p>
+                <a href="admision.html"><button class="btn"> Admission <i class="fa-solid fa-school"></i></button></a>
+            </div>
+        </section>
+    </header>
+    <main>
+        
+        <section id="video">
+            <div class="videocontainer">
+                <div class="video">
+               <img src="adm.jpg" alt="">
+            </div>
+            <div class="videocontent">
+               <h4>Our Admission Process</h4>
+                <p>tumaini school Group is a Pan-African independent school network offering preschool through secondary education for students from ages 3 through 19. We prepare the next generation of leaders and innovators through world-class teaching methods with an emphasis on 21st century skills. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda minus enim non soluta cum fugit, ipsa facere officia magnam eveniet odio deleniti nobis distinctio quae eligendi praesentium. Veritatis, dolores?</p>
+            </div>
+            </div>
+            
+        </section>
+        <section id="foem">
+            <h2 class="title">Application <span>Form</span> </h2>
+
+            <form action="">
+                <label for="name">Student Full Name</label>
+                <input type="text" name="" id="" placeholder="Victor Otieno Owala">
+               
+                <label for="name">Gender</label>
+                <input type="text" name="" id="" placeholder="Female/Male">
+               
+               <label for="name">Student Date Of Birth</label>
+                <input type="text" name="" id="" placeholder="dd/mm/yy">
+
+                <label for="name">Mother`s Name</label>
+                <input type="text" name="" id="" placeholder="Damaris Atieno Anyango">
+               
+                  <label for="name">Father`s Name</label>
+                <input type="text" name="" id="" placeholder="Collins Owala Einstein">
+
+                <label for="name">Mother`s Contact</label>
+                <input type="text" name="" id="" placeholder="0701185813">
+
+                <label for="name">Father`s Contact</label>
+                <input type="text" name="" id="" placeholder="0701185813">
+
+                <label for="name">Grade</label>
+                <input type="text" name="" id="" placeholder="grade 3">
+
+                 <label for="name">School</label>
+                <select name="school" id="">
+                    <option value="">choose school</option>
+                    <option value="">school1</option>
+                    <option value="">school2</option>
+                    <option value="">school3</option>
+                    <option value="">school4</option>
+                </select>
+
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <footer class="lux-footer">
+    <div class="lux-container">
+
+        <div class="lux-section">
+            <h3 class="lux-title">Tumaini school</h3>
+            <p class="lux-text">Developing innovators & leaders who will shape the future</p>
+        </div>
+
+        <div class="lux-section">
+            <h3 class="lux-heading">Explore</h3>
+            <ul class="lux-links">
+                <li><a href="index.html"> home </a></li>
+                    <li><a href="about.html"> about </a></li>
+                    <li><a href="login.html"> log in </a></li>
+                    <li><a href="media.html"> media </a></li>
+                    <li><a href="admision.html"> admission </a></li>
+            </ul>
+        </div>
+
+        <div class="lux-section">
+            <h3 class="lux-heading">Get in Touch</h3>
+            <p class="lux-text">Nairobi, Kenya</p>
+            <p class="lux-text">Phone: 0712345678</p>
+            <p class="lux-text">Email: tumainischool@gmail.com</p>
+        </div>
+
+        <div class="lux-section">
+            <h3 class="lux-heading">Follow</h3>
+            <div class="lux-socials">
+                <a href="#" target="_blank">facebook</a>
+                <a href="#" target="_blank">whatsap</a>
+                <a href="#"target="_blank">call</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="lux-bottom">
+        © 2026 tumaini school — Crafted with Excellence
+    </div>
+        </footer>
+    </main>
+</body>
+<script>
+    // menu open js 
+
+    const menu = document.getElementById("menu");
+    const close = document.getElementById("close");
+    const nav = document.getElementById("nav");
+    
+    if(menu){
+        menu.addEventListener("click",()=>{
+        nav.classList.add('openmenu');
+        
+        })
+        
+    }
+      if(close){
+        close.addEventListener("click",()=>{
+        nav.classList.remove('openmenu');
+       
+        })
+        
+    }
+    // hed animation
+  const reveals = document.querySelectorAll(".reveal");
+    function revealOnScroll() {
+    for(let i =0;i < reveals.length;i++){
+        let windowHeight=window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealpoint=150;
+
+        if(revealTop< windowHeight - revealpoint){
+            reveals[i].classList.add("actives") ;
+        } else{
+            reveals[i].classList.remove("actives") ;
+        }  
+        
+    }
+    }
+    window.addEventListener("scroll", revealOnScroll);
+
+// Run once on load (optional)
+revealOnScroll();
+
+const joins = document.querySelectorAll('.joins');
+
+function joinonscroll(){
+    for(i=0; i < joins.length; i++){
+        let windowheight = window.innerHeight;
+        let jointop = joins[i].getBoundingClientRect().top ;
+        let revealpoint= 150 //
+
+         if(jointop < windowheight - revealpoint){
+            joins[i].classList.add('join');
+         } else{
+           joins[i].classList.remove('join');
+         }
+    }
+}
+window.addEventListener("scroll",joinonscroll);
+
+joinonscroll(); 
+</script>
+</html>

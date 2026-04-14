@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+:root{
+     --color1:hsl(6, 20%, 30%);
+    --color2:#e1e5f2;
+    --color3:hsl(290, 42%, 29%);
+    --fontp: clamp(10px,4vw,25px ) ;
+    --fontsubtopic: clamp(15px,5vw,25px );
+}
+/*
+
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+.inconsolata-<uniquifier> {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*/
+ body{
+ background:linear-gradient(rgba(0, 0, 0, 0.612),rgba(0, 0, 0, 0.612)),url(tumaini.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ font-family: "Roboto", sans-serif;
+ }
+ form{
+    
+    background-color: white;
+    width: 25%;
+    padding: 20px;
+   border-radius: 10px;
+ }
+ form h4{
+    text-align: center;
+    margin: 50px 10px; 
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    letter-spacing: 2px ;
+    color: var(--color3);
+    font-size: var(--fontp);
+}
+ form label{
+    display: block;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 10px 0PX; 
+ }
+ img{
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    
+ }
+ form input, select{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    text-transform: uppercase;
+ }
+ input[type='submit']{
+    margin: 20px 0px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    letter-spacing: 3px;
+ }
+ @media  (max-width:900px){
+ form{
+    
+    background-color: white;
+    width: 90%;
+    padding: 5px;
+   border-radius: 10px;
+ }
+ form h4{
+
+    font-size: var(--fontsubtopic);
+}
+ form label{
+    display: block;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 10px 0PX; 
+ }
+ img{
+    width: 100px;
+    display: block;
+    margin: 5px auto;
+    
+ }
+ form input, select{
+    padding: 5px;
+ }
+ input[type='submit']{
+  
+    padding: 15px;
+ }
+
+}
+    </style>
+</head>
+<body>
+  
+    <form action=""> 
+         <img src="logo-removebg-preview.png" alt="">
+         <h4>WELCOME TO TUMAINI</h4>
+        <label for="">Log in as a </label>
+        <select name="type" id="">
+            <option value="student">student</option>
+            <option value="teacher">teacher</option>
+            <option value="admin">admin</option>
+        </select>
+        <label for="">Username</label>
+        <input type="text" name="" id="">
+         <label for="">Password</label>
+        <input type="pass" name="" id="">
+       <input type="submit" value="WELCOME">
+    </form>
+</body>
+</html>

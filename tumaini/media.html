@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+<script src="https://kit.fontawesome.com/4d903c9eb4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <section id="hed">
+            <nav class="navigation" >
+                <h2>tumaini school</h2>
+                <div id="menu"><i class="fa-solid fa-bars"></i></div>
+               
+                <ul id="nav"> 
+                     <div id="close" class="close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <li><a href="index.html"> home </a></li>
+                    <li><a href="about.html"> about </a></li>
+                    <li><a href="login.html"> log in </a></li>
+                    <li><a href="media.html"> media </a></li>
+                    <li><a href="teachers.html"> staffs </a></li>
+                    <li><a href="admision.html"> admission </a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h2>welcome to ;</h2>
+                <h1>TUMAINI  <span> SCHOOL</span> </h1>
+                <p>Developing innovators & leaders who will shape the future</p>
+                <a href="admision.html"><button class="btn"> Admission <i class="fa-solid fa-school"></i></button></a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="media">
+            <h2 class="title">School <span>Gallery</span> </h2>
+            <div class="mediacontainer">
+                <div class="gallery">
+                    <img src="media1.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media2.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media3.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media4.jpg" alt="">
+                </div>
+                     <div class="gallery">
+                    <img src="media5.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media6.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media1.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media2.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media3.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media4.jpg" alt="">
+                </div>
+                     <div class="gallery">
+                    <img src="media5.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="media6.jpg" alt="">
+                </div>
+            </div>
+         
+        </section>
+      <footer class="lux-footer">
+    <div class="lux-container">
+
+        <div class="lux-section">
+            <h3 class="lux-title">Tumaini school</h3>
+            <p class="lux-text">Developing innovators & leaders who will shape the future</p>
+        </div>
+
+        <div class="lux-section">
+            <h3 class="lux-heading">Explore</h3>
+            <ul class="lux-links">
+                <li><a href="index.html"> home </a></li>
+                    <li><a href="about.html"> about </a></li>
+                    <li><a href="login.html"> log in </a></li>
+                    <li><a href="media.html"> media </a></li>
+                    <li><a href="admision.html"> admission </a></li>
+            </ul>
+        </div>
+
+        <div class="lux-section">
+            <h3 class="lux-heading">Get in Touch</h3>
+            <p class="lux-text">Nairobi, Kenya</p>
+            <p class="lux-text">Phone: 0712345678</p>
+            <p class="lux-text">Email: tumainischool@gmail.com</p>
+        </div>
+
+        <div class="lux-section">
+            <h3 class="lux-heading">Follow</h3>
+            <div class="lux-socials">
+                <a href="#" target="_blank">facebook</a>
+                <a href="#" target="_blank">whatsap</a>
+                <a href="#"target="_blank">call</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="lux-bottom">
+        © 2026 tumaini school — Crafted with Excellence
+    </div>
+        </footer>
+    </main>
+</body>
+<script>
+    // menu open js 
+
+    const menu = document.getElementById("menu");
+    const close = document.getElementById("close");
+    const nav = document.getElementById("nav");
+    
+    if(menu){
+        menu.addEventListener("click",()=>{
+        nav.classList.add('openmenu');
+        
+        })
+        
+    }
+      if(close){
+        close.addEventListener("click",()=>{
+        nav.classList.remove('openmenu');
+       
+        })
+        
+    }
+    // hed animation
+  const reveals = document.querySelectorAll(".reveal");
+    function revealOnScroll() {
+    for(let i =0;i < reveals.length;i++){
+        let windowHeight=window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealpoint=150;
+
+        if(revealTop< windowHeight - revealpoint){
+            reveals[i].classList.add("actives") ;
+        } else{
+            reveals[i].classList.remove("actives") ;
+        }  
+        
+    }
+    }
+    window.addEventListener("scroll", revealOnScroll);
+
+// Run once on load (optional)
+revealOnScroll();
+
+const joins = document.querySelectorAll('.joins');
+
+function joinonscroll(){
+    for(i=0; i < joins.length; i++){
+        let windowheight = window.innerHeight;
+        let jointop = joins[i].getBoundingClientRect().top ;
+        let revealpoint= 150 //
+
+         if(jointop < windowheight - revealpoint){
+            joins[i].classList.add('join');
+         } else{
+           joins[i].classList.remove('join');
+         }
+    }
+}
+window.addEventListener("scroll",joinonscroll);
+
+joinonscroll(); 
+</script>
+</html>
