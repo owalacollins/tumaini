@@ -87,11 +87,11 @@ nav{
     text-transform: uppercase;
 }
 #hed{
-  height: 75vh;/*
+  height: 60vh;/*
   background:linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)),url(back2.jpg);
   background-position: center;
   background-size: cover;*/
-
+  border:1px solid red;
   
 }
 nav ul {
@@ -113,8 +113,8 @@ nav ul li a {
   padding: 7vw;
   color: var(--color3);
 
-  height: 70vh;
- 
+  height: 50vh;
+  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items:flex-start;
